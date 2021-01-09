@@ -21,6 +21,7 @@ public class AlertDialogUtil {
             public void onClick(DialogInterface dialog, int which) {
                 if(screen.equals("SplashActivity")){
                     context.startActivity(new Intent(Settings.ACTION_WIFI_SETTINGS));
+                    ((Activity)context).finish();
                 }else{
                     //((Activity)context).onBackPressed();
                     ((Activity)context).finish();
