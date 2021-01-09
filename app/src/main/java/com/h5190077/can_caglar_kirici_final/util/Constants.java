@@ -7,11 +7,6 @@ public class Constants {
     public static int INTERVAL = 1000;
     public static  int MILISECOND = 3000;
 
-   public static String ALERT_CIKIS = "Çıkmak istediğinize emin misiniz?";
 
-   public static  String ALERT_EVET = "Evet";
-   public static  String ALERT_HAYIR = "Hayır";
-
-    public static  String ALERT_PROGRESS = "Lütfen Bekleyiniz";
 
 }

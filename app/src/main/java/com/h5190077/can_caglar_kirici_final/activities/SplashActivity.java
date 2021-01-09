@@ -10,6 +10,7 @@ import android.os.CountDownTimer;
 import android.provider.Settings;
 
 import com.h5190077.can_caglar_kirici_final.R;
+import com.h5190077.can_caglar_kirici_final.util.AlertDialogUtil;
 import com.h5190077.can_caglar_kirici_final.util.Constants;
 import com.h5190077.can_caglar_kirici_final.util.NetworkUtil;
 
@@ -17,7 +18,11 @@ public class SplashActivity extends AppCompatActivity {
 
     Intent listeEkraniIntent;
     CountDownTimer splashEkraniCountDownTimer;
-    AlertDialog.Builder splashEkraniDialogbuilder;
+
+    String alertDialogBaslik;
+    String alertDialogMesaj;
+    String alertDialogKapat;
+    String alertDialogInternetAc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +33,11 @@ public class SplashActivity extends AppCompatActivity {
 
     }
     private void init(){
+        alertDialogBaslik = getString(R.string.alertInternetBaslik);
+        alertDialogMesaj = getString(R.string.alertInternetMesaj);
+        alertDialogInternetAc = getString(R.string.alertInternetAc);
+        alertDialogKapat = getString(R.string.alertKapat);
+
         timeriBaslat();
     }
     private void timeriBaslat()
@@ -50,22 +60,7 @@ public class SplashActivity extends AppCompatActivity {
         if (NetworkUtil.internetVarMi(getApplicationContext())){
             ekranGecisiYap();
         }else{
-            splashEkraniDialogbuilder = new AlertDialog.Builder(SplashActivity.this);
-            splashEkraniDialogbuilder.setTitle("İnternet Bağlantınız Yok");
-            splashEkraniDialogbuilder.setMessage("Uygulamayı kullanmak için internete bağlayın.");
-            splashEkraniDialogbuilder.setNegativeButton("Kapat", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    finish();
-                }
-            });
-            splashEkraniDialogbuilder.setPositiveButton("İnterneti Aç", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    startActivity(new Intent(Settings.ACTION_WIFI_SETTINGS));
-                }
-            });
-            splashEkraniDialogbuilder.show();
+            AlertDialogUtil.alertDialogGoster(this, alertDialogMesaj, alertDialogBaslik,alertDialogInternetAc,alertDialogKapat,"SplashActivity");
         }
     }
     private void ekranGecisiYap(){

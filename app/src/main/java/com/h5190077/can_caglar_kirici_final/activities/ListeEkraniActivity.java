@@ -19,6 +19,7 @@ import com.h5190077.can_caglar_kirici_final.R;
 import com.h5190077.can_caglar_kirici_final.adaptor.KitapAdaptor;
 import com.h5190077.can_caglar_kirici_final.model.KitapModel;
 import com.h5190077.can_caglar_kirici_final.network.Service;
+import com.h5190077.can_caglar_kirici_final.util.AlertDialogUtil;
 import com.h5190077.can_caglar_kirici_final.util.Constants;
 import com.h5190077.can_caglar_kirici_final.util.GlideUtil;
 import com.h5190077.can_caglar_kirici_final.util.ObjectUtil;
@@ -42,6 +43,11 @@ public class ListeEkraniActivity extends AppCompatActivity {
 
     ProgressDialog progressDialog;
 
+    String alertDialogCikis;
+    String alertDialogEvet;
+    String alertDialogHayir;
+    String progressDialogBekleyin;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,37 +58,28 @@ public class ListeEkraniActivity extends AppCompatActivity {
 
     }
 
-    @Override
-    public void onBackPressed() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(Constants.ALERT_CIKIS)
-                .setCancelable(false)
-                .setPositiveButton(Constants.ALERT_EVET, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
-                        finish();
-                    }
-                })
-                .setNegativeButton(Constants.ALERT_HAYIR, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
-                        dialog.cancel();
-                    }
-                });
-        AlertDialog alert = builder.create();
-        alert.show();
 
-    }
 
     private void init()
     {
+        alertDialogCikis = getString(R.string.alertCikis);
+        alertDialogEvet = getString(R.string.alertEvet);
+        alertDialogHayir = getString(R.string.alertHayir);
+        progressDialogBekleyin = getString(R.string.alertProgressMesaj);
+
         progressDialog = new ProgressDialog(ListeEkraniActivity.this);
-        progressDialog.setMessage(Constants.ALERT_PROGRESS);
+        progressDialog.setMessage(progressDialogBekleyin);
 
 
         kitaplariGetir();
 
 
     }
+    @Override
+    public void onBackPressed() {
+        AlertDialogUtil.alertDialogGoster(this,alertDialogCikis,"",alertDialogEvet,alertDialogHayir,"");
 
+    }
     void kitaplariGetir()
     {
 
