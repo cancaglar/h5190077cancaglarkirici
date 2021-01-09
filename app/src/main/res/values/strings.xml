@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">H5190077_CanCaglarKiriciFinal</string>
+
+
+
+    <string name="detayEkraniBaslik">Baslik</string>
+    <string name="detayEkraniDetay">Detay</string>
+<!-- örnek olarak kulandığım stringler-->
+
+    <string name="cardViewKitapKitapAdi">Kitap Adı :</string>
+    <string name="cardViewKitapKitapAdiCevap">Kitap Adi</string>
+    <string name="cardViewKitapYazarAdi">Yazar Adı :</string>
+    <string name="cardViewKitapYazarAdiCevap">Yazar Adi</string>
+    <string name="cardViewKitapBasimTarihi">Basım Tarihi :</string>
+    <string name="cardViewKitapBasimTarihiCevap">1989</string>
+    <string name="cardViewKitapSeriSirasi">Seri Sırası :</string>
+    <string name="cardViewKitapSeriSirasiCevap">1</string>
+</resources>

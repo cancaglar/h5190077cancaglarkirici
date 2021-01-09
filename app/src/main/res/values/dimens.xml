@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="splashEkraniLogoConstraintLeft">64dp</dimen>
+    <dimen name="splashEkraniLogoConstraintRight">65dp</dimen>
+    <dimen name="splashEkraniLogoConstraintUp">229dp</dimen>
+    <dimen name="splashEkraniLogoConstraintDown">229dp</dimen>
+    <dimen name="splashEkraniLogoLayoutWidth">282dp</dimen>
+    <dimen name="splashEkraniLogoLayoutHeight">273dp</dimen>
+
+
+    <dimen name="listeEkraniKapakLayoutWidth">414dp</dimen>
+    <dimen name="listeEkraniKapakLayoutHeight">140dp</dimen>
+    <dimen name="listeEkraniRvcMarginTop">140dp</dimen>
+
+
+    <dimen name="detayEkraniKapakLayoutHeight">182dp</dimen>
+    <dimen name="detayEkraniBaslikSize">30sp</dimen>
+    <dimen name="detayEkraniBaslikPadding">10dp</dimen>
+    <dimen name="detayEkraniDetayPadding">10dp</dimen>
+    <dimen name="detayEkraniDetayTextSize">20sp</dimen>
+
+
+
+    <dimen name="cardViewKitapAdiTextSize">14sp</dimen>
+    <dimen name="cardViewKitapAdiCevapTextSize">14sp</dimen>
+    <dimen name="cardViewYazarAdiTextSize">14sp</dimen>
+    <dimen name="cardViewYazarAdiCevapTextSize">14sp</dimen>
+    <dimen name="cardViewBasimTarihiTextSize">14sp</dimen>
+    <dimen name="cardViewBasimTarihiCevapTextSize">14sp</dimen>
+    <dimen name="cardViewSeriSirasiTextSize">14sp</dimen>
+    <dimen name="cardViewSeriSirasiCevapTextSize">14sp</dimen>
+
+
+    <dimen name="cardViewConstraintLayoutPadding">16dp</dimen>
+
+
+    <dimen name="cardViewKitapAdiConstraintLeft">16dp</dimen>
+    <dimen name="cardViewKitapAdiCevapConstraintUp">5dp</dimen>
+    <dimen name="cardViewYazarAdiConstraintUp">16dp</dimen>
+    <dimen name="cardViewYazarAdiCevapConstraintUp">5dp</dimen>
+    <dimen name="cardViewBasimTarihiConstraintUp">16dp</dimen>
+    <dimen name="cardViewBasimTarihiCevapConstraintUp">5dp</dimen>
+    <dimen name="cardViewSeriSirasiConstraintUp">16dp</dimen>
+    <dimen name="cardViewSeriSirasiCevapConstraintUp">5dp</dimen>
+
+
+    <dimen name="cardViewImgConstraintUp">10dp</dimen>
+    <dimen name="cardViewImgConstraintLeft">16dp</dimen>
+    <dimen name="cardViewImgHeight">209dp</dimen>
+    <dimen name="cardViewImgWidth">162dp</dimen>
+
+</resources>

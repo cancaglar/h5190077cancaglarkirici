@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/cardViewConstraintLayoutPadding">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewKitap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/cardViewColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtBasimTarihi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cardViewBasimTarihiCevapConstraintUp"
+                android:text="@string/cardViewKitapBasimTarihiCevap"
+                android:textColor="@color/cardViewBasimTarihiCevapTextColor"
+                android:textSize="@dimen/cardViewBasimTarihiCevapTextSize"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/txtBasimTarihiGoster"
+                app:layout_constraintTop_toBottomOf="@+id/txtBasimTarihiGoster" />
+
+            <TextView
+                android:id="@+id/txtKitapAdi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cardViewKitapAdiCevapConstraintUp"
+                android:text="@string/cardViewKitapKitapAdiCevap"
+                android:textColor="@color/cardViewKitapAdiCevapTextColor"
+                android:textSize="@dimen/cardViewKitapAdiCevapTextSize"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/txtKitapAdiGoster"
+                app:layout_constraintTop_toBottomOf="@+id/txtKitapAdiGoster" />
+
+            <TextView
+                android:id="@+id/txtSeriSirasiGoster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cardViewSeriSirasiConstraintUp"
+                android:text="@string/cardViewKitapSeriSirasi"
+                android:textColor="@color/cardViewSeriSirasiTextColor"
+                android:textSize="@dimen/cardViewSeriSirasiTextSize"
+                app:layout_constraintStart_toStartOf="@+id/txtBasimTarihi"
+                app:layout_constraintTop_toBottomOf="@+id/txtBasimTarihi" />
+
+            <TextView
+                android:id="@+id/txtKitapAdiGoster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/cardViewKitapAdiConstraintLeft"
+                android:text="@string/cardViewKitapKitapAdi"
+                android:textColor="@color/cardViewKitapAdiTextColor"
+                android:textSize="@dimen/cardViewKitapAdiTextSize"
+                app:layout_constraintStart_toEndOf="@+id/imgKitap"
+                app:layout_constraintTop_toTopOf="@+id/imgKitap" />
+
+            <TextView
+                android:id="@+id/txtYazarAdi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cardViewYazarAdiCevapConstraintUp"
+                android:text="@string/cardViewKitapYazarAdiCevap"
+                android:textColor="@color/cardViewYazarAdiCevapTextColor"
+                android:textSize="@dimen/cardViewYazarAdiCevapTextSize"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/txtYazarAdiGoster"
+                app:layout_constraintTop_toBottomOf="@+id/txtYazarAdiGoster" />
+
+            <TextView
+                android:id="@+id/txtSeriSirasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cardViewSeriSirasiCevapConstraintUp"
+                android:text="@string/cardViewKitapSeriSirasiCevap"
+                android:textColor="@color/cardViewSeriSirasiCevapTextColor"
+                android:textSize="@dimen/cardViewSeriSirasiCevapTextSize"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/txtSeriSirasiGoster"
+                app:layout_constraintTop_toBottomOf="@+id/txtSeriSirasiGoster" />
+
+            <TextView
+                android:id="@+id/txtYazarAdiGoster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cardViewYazarAdiConstraintUp"
+                android:text="@string/cardViewKitapYazarAdi"
+                android:textColor="@color/cardViewYazarAdiTextColor"
+                android:textSize="@dimen/cardViewYazarAdiTextSize"
+                app:layout_constraintStart_toStartOf="@+id/txtKitapAdi"
+                app:layout_constraintTop_toBottomOf="@+id/txtKitapAdi" />
+
+            <ImageView
+                android:id="@+id/imgKitap"
+                android:layout_width="@dimen/cardViewImgWidth"
+                android:layout_height="@dimen/cardViewImgHeight"
+                android:layout_marginStart="@dimen/cardViewImgConstraintLeft"
+                android:layout_marginTop="@dimen/cardViewImgConstraintUp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/txtBasimTarihiGoster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cardViewBasimTarihiConstraintUp"
+                android:text="@string/cardViewKitapBasimTarihi"
+                android:textColor="@color/cardViewBasimTarihiTextColor"
+                android:textSize="@dimen/cardViewBasimTarihiTextSize"
+                app:layout_constraintStart_toStartOf="@+id/txtYazarAdi"
+                app:layout_constraintTop_toBottomOf="@+id/txtYazarAdi" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
