@@ -24,7 +24,7 @@ public class KitapViewHolder extends RecyclerView.ViewHolder {
         txtIsim = itemView.findViewById(R.id.txtKitapAdi);
         txtYazarAdi = itemView.findViewById(R.id.txtYazarAdi);
         txtSeriSirasi = itemView.findViewById(R.id.txtSeriSirasi);
-        txtBasimTarihi = itemView.findViewById(R.id.txtBasimTarihiGoster);
+        txtBasimTarihi = itemView.findViewById(R.id.txtBasimTarihi);
 
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override

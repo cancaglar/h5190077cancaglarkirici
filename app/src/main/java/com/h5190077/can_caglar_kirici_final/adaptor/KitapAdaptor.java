@@ -46,6 +46,7 @@ public class KitapAdaptor extends RecyclerView.Adapter<KitapViewHolder> {
     public void onBindViewHolder(@NonNull KitapViewHolder viewHolder, int position) {
 
         viewHolder.txtIsim.setText(kitaplar.get(position).getKitapAdi());
+        viewHolder.txtYazarAdi.setText(kitaplar.get(position).getYazarAdi());
         viewHolder.txtBasimTarihi.setText(kitaplar.get(position).getBasimTarihi());
         viewHolder.txtSeriSirasi.setText(kitaplar.get(position).getSeriSirasi());
         GlideUtil.resmiIndiripGoster(context,kitaplar.get(position).getKucukLogoUrl(),viewHolder.imgKitap);
