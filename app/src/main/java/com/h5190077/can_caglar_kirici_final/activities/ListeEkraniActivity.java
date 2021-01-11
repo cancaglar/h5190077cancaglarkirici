@@ -37,7 +37,7 @@ public class ListeEkraniActivity extends AppCompatActivity {
 
     String tiklananKitapString;
     RecyclerView recyclerViewKitaplar;
-    Intent KitapDetayIntent;
+    Intent kitapDetayIntent;
     KitapAdaptor kitapAdaptor;
     KitapModel tiklananKitap;
 
@@ -146,10 +146,10 @@ public class ListeEkraniActivity extends AppCompatActivity {
 
     private void openNextActivity (KitapModel tiklananKitap){
 
-        KitapDetayIntent = new Intent(getApplicationContext(),KitapDetayActivity.class);
+        kitapDetayIntent = new Intent(getApplicationContext(),KitapDetayActivity.class);
         tiklananKitapString = ObjectUtil.kitapToJsonString(tiklananKitap);
-        KitapDetayIntent.putExtra(Constants.TIKLANAN_BURC_TASINANIN_BASLIGI,tiklananKitapString);
-        startActivity(KitapDetayIntent);
+        kitapDetayIntent.putExtra(Constants.TIKLANAN_BURC_TASINANIN_BASLIGI,tiklananKitapString);
+        startActivity(kitapDetayIntent);
 
     }
 
