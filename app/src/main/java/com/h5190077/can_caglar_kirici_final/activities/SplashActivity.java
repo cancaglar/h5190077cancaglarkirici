@@ -60,7 +60,7 @@ public class SplashActivity extends AppCompatActivity {
         if (NetworkUtil.internetVarMi(getApplicationContext())){
             ekranGecisiYap();
         }else{
-            AlertDialogUtil.alertDialogGoster(this, alertDialogMesaj, alertDialogBaslik,alertDialogInternetAc,alertDialogKapat,"SplashActivity");
+            AlertDialogUtil.alertDialogGoster(this, alertDialogMesaj, alertDialogBaslik,alertDialogInternetAc,alertDialogKapat,Constants.ALERT_UTIL_SPLASH);
         }
     }
     private void ekranGecisiYap(){
