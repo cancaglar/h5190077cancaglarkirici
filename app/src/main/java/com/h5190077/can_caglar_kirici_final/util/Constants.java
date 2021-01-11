@@ -7,6 +7,9 @@ public class Constants {
     public static int INTERVAL = 1000;
     public static  int MILISECOND = 3000;
 
+    public static String ALERT_UTIL_SPLASH = "SplashActivity";
+    public static String ALERT_UTIL_LISTE_EKRANI = "ListeEkrani";
+
 
 
 }
