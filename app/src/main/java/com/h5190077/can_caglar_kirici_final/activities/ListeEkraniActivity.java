@@ -77,7 +77,7 @@ public class ListeEkraniActivity extends AppCompatActivity {
     }
     @Override
     public void onBackPressed() {
-        AlertDialogUtil.alertDialogGoster(this,alertDialogCikis,"",alertDialogEvet,alertDialogHayir,"");
+        AlertDialogUtil.alertDialogGoster(this,alertDialogCikis,"",alertDialogEvet,alertDialogHayir,Constants.ALERT_UTIL_LISTE_EKRANI);
 
     }
     void kitaplariGetir()
