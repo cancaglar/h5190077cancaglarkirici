@@ -50,4 +50,11 @@
     <dimen name="cardViewImgHeight">209dp</dimen>
     <dimen name="cardViewImgWidth">162dp</dimen>
 
+    <dimen name="cardViewCardCornerRadius">2dp</dimen>
+    <dimen name="cardViewCardElevation">2dp</dimen>
+    <dimen name="cardViewCardMaxElevation">2dp</dimen>
+
+
+
+
 </resources>
