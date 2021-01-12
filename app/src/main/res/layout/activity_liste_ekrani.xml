@@ -13,7 +13,7 @@
         android:layout_height="@dimen/listeEkraniKapakLayoutHeight"
         android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="@dimen/listeActivityImgLayout_constraintHorizontal_bias"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/kapak"
@@ -27,9 +27,9 @@
         android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="@dimen/listeActivityRecyclerviewLayout_constraintHorizontal_bias"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgListeEkraniKapak"
-        app:layout_constraintVertical_bias="0.453"
+        app:layout_constraintVertical_bias="@dimen/listeActivityRecyclerviewlayout_constraintVertical_bias"
         tools:listitem="@layout/cardview_kitap" />
 </androidx.constraintlayout.widget.ConstraintLayout>
