@@ -1,7 +1,7 @@
 <p align="center"><img width="300" height="300" src="https://raw.githubusercontent.com/cancaglar/h5190077cancaglarkirici/main/app/src/main/res/drawable/logo.png"/></p>
-<h1>Medipol Üniversitesi Final Projesi</h1>
-Bu proje Mobil yazılımlar dersi için hazırlanmıştır. Proje Drizzt Efsanesi kitap serisinin ilk 6 kitabını tanıtmak için yapılmış bir Android uygulamasıdır.
-<h2>Ekran Görüntüleri</h2>
+## Medipol Üniversitesi Final Projesi 
+<p> Bu proje Mobil yazılımlar dersi için hazırlanmıştır. Proje Drizzt Efsanesi kitap serisinin ilk 6 kitabını tanıtmak için yapılmış bir Android uygulamasıdır.</p><br>
+## Ekran Görüntüleri
 <p align="center">
 <img width="300" height="500" src="https://raw.githubusercontent.com/cancaglar/h5190077cancaglarkirici/main/Screens/E1.PNG"/>
 <img width="300" height="500" src="https://raw.githubusercontent.com/cancaglar/h5190077cancaglarkirici/main/Screens/E1_internet.PNG"/>
@@ -10,7 +10,7 @@ Bu proje Mobil yazılımlar dersi için hazırlanmıştır. Proje Drizzt Efsanes
 <img width="300" height="500" src="https://raw.githubusercontent.com/cancaglar/h5190077cancaglarkirici/main/Screens/E3.PNG"/>
 </p>
 
-medipol üniversitesi mobil yazılımlar dersi final ödevi
+## Projenin Mimari Yapısı
 
 
 License
