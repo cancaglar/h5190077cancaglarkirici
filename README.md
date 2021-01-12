@@ -15,11 +15,18 @@
 </p>
 
 ## Projenin Mimari Yapısı
+<img width="300" height="600" src="https://raw.githubusercontent.com/cancaglar/h5190077cancaglarkirici/main/images/mvc1.PNG"/>
+<img width="300" height="600" src="https://raw.githubusercontent.com/cancaglar/h5190077cancaglarkirici/main/images/mvc2.PNG"/>
 
+## Kütüphaneler ve Araçlar
+<li><a href="https://square.github.io/retrofit/">Retrofit</a></li>
+<li><a href="https://github.com/square/okhttp">OkHttp</a></li>
+<li><a href="https://github.com/ReactiveX/RxJava">RxJava</a></li>
+<li><a href="https://github.com/ReactiveX/RxAndroid">RxAndroid</a></li>
+<li><a href="https://github.com/bumptech/glide">Glide</a></li>
 
 License
 --------
-
 
     Copyright 2021 Can Çağlar KIRICI.
 
