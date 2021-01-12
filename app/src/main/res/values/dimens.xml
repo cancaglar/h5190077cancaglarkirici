@@ -54,6 +54,9 @@
     <dimen name="cardViewCardElevation">2dp</dimen>
     <dimen name="cardViewCardMaxElevation">2dp</dimen>
 
+    <dimen name="listeActivityImgLayout_constraintHorizontal_bias">0.498</dimen>
+    <dimen name="listeActivityRecyclerviewLayout_constraintHorizontal_bias">0.0</dimen>
+    <dimen name="listeActivityRecyclerviewlayout_constraintVertical_bias">0.453</dimen>
 
 
 
