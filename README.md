@@ -15,6 +15,7 @@
 </p>
 
 ## Projenin Mimari Yapısı
+<h4>MVC</h4>
 <img width="300" height="600" src="https://raw.githubusercontent.com/cancaglar/h5190077cancaglarkirici/main/images/mvc1.PNG"/>
 <img width="300" height="600" src="https://raw.githubusercontent.com/cancaglar/h5190077cancaglarkirici/main/images/mvc2.PNG"/>
 
